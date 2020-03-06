@@ -87,7 +87,7 @@ function sendFB($notadi,$not,$dersad,$linkim,$averaj,$telegramid,$realname){
 	$kisalink = k1s4lt($linkim);
 	$message = urlencode("[$dersad] $notadi\nGrade: $not - Avg: $averaj\n$kisalink");
 	$chat = "$telegramid";
-	$botapi = "471731004:AAE0R5Kl2KJZvGm-VvNHdzJuVs5Hqh5JSOY";
+	$botapi = "XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 	$link = "https://api.telegram.org/bot$botapi/sendMessage?text=$message&chat_id=$chat";
 	$ch = curl_init($link);
 	curl_setopt($ch, CURLOPT_HEADER, 0);
